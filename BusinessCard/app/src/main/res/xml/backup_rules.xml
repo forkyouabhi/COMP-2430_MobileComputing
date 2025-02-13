@@ -6,8 +6,7 @@
    See https://developer.android.com/about/versions/12/backup-restore
 -->
 <full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
+    <include domain="sharedpref">/data/data/com.forkyouabhi.app/shared_prefs/</include>
+    <exclude domain="sharedpref">/data/data/com.forkyouabhi.app/shared_prefs/sensitive_pref.xml</exclude>
+
 </full-backup-content>
