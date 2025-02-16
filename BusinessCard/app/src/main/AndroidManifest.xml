@@ -5,6 +5,7 @@
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_rules"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupOnly="false"
         android:icon="@drawable/ic_launcher"
         android:label="BusinessCard"
         android:roundIcon="@drawable/ic_launcher"

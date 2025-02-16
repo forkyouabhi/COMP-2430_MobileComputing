@@ -77,6 +77,11 @@ fun BusinessCard() {
                     color = Color.Gray
                 )
                 Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "Hello Thunder Bay",
+                    fontSize = 18.sp,
+                    color = Color(0xFF331102)
+                )
 
                 HorizontalDivider(thickness = 1.dp, color = Color.Gray)
 
