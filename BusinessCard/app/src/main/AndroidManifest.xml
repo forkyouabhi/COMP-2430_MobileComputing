@@ -1,6 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.forkyouabhi.businesscard">
 
+    <!-- Request permissions for sensor access -->
+    <uses-feature android:name="android.hardware.sensor.proximity" />
+    <uses-feature android:name="android.hardware.sensor.light" />
+    <uses-feature android:name="android.hardware.sensor.compass" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,16 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessCard">
 
-
-
-    <activity android:name=".MainActivity"
+        <activity android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.BusinessCard">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
+
 </manifest>
